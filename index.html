@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+                <!-- lining Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">        
+    
+                <!-- linking css -->
+    <link rel="stylesheet" href="./style.css">
+            
+</head>
+<body>
+
+                    
+
+                    <!-- header section starts -->
+
+    <header class="head">
+        <div class="container">
+            <div class="head-wrapper">
+                <h1 class="main-heading">FoodCook Planner</h1>
+            </div>
+        </div>
+    </header>
+
+                    <!-- header section ends -->
+
+                
+
+    <main class="main">
+
+
+                    <!-- alert section starts -->
+
+                
+    <div class="alert">
+        <div class="container">
+            <div class="alert-wrapper">
+                <div class="alert-name">
+                    <h4>Food is updated successfully!</h4>
+                </div>
+                <div id="close-icon" class="alert-close-btn">
+                    <i class="fa-solid fa-x fa-sm"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="removeAlert">
+        <div class="container">
+            <div class="alert-wrapper">
+                <div class="alert-name">
+                    <h4>Food is deleted successfully!</h4>
+                </div>
+                <div id="remove-close-icon" class="alert-close-btn">
+                    <i class="fa-solid fa-x fa-sm"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    <!-- alert section ends -->
+
+
+
+
+                    <!-- form section starts -->
+
+    
+        <section class="form-section">
+            <div class="container">
+                <div class="form-section-wrapper">
+                    <div class="form-border">
+                        <div class="form-row">
+                            <input id="form-inputbox" type="text" placeholder="I like to eat...">
+                            <button id="form-row-button">save</button>   
+                        </div>
+                        <div id="textbox">
+                            <ul id="food-list">
+                                <div class="food-item-container">
+                                    <li class="food-item"  id="food-item-1">sambar</li>
+                                    <div onclick="removeItem(event)" class="trash-icon">
+                                        <i class="fa-solid fa-trash-can" style="color: #080f1c;"></i>
+                                    </div>
+                                </div>
+                                <div class="food-item-container">
+                                    <li class="food-item">rasam</li>
+                                    <div onclick="removeItem(event)" class="trash-icon">
+                                        <i class="fa-solid fa-trash-can" style="color: #080f1c;"></i>
+                                    </div>
+                                </div>
+                                <div class="food-item-container">
+                                    <li class="food-item">curd</li>
+                                    <div onclick="removeItem(event)" class="trash-icon">
+                                        <i class="fa-solid fa-trash-can" style="color: #080f1c;"></i>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="toggle-button">Hide</button>
+                    <div  class="summa-input-container input-off form-border">
+                        <input class="summa-input" type="text" placeholder="summa text">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <form>
+            <div>
+                <input id="form-validation-input" type="text" placeholder="Full Name">
+                <div class="form-input-alert"></div>
+            </div>
+            <div>
+                <label for="terms">
+                    <input id="form-validation-checkbox" type="checkbox" id="terms"><span>I accept</span><a href="https://google.com">Terms and condition</a>
+                </label>
+            </div>
+            <button id="form-validation-button">Submit</button>
+        </form>
+
+        
+
+
+                    <!-- form section ends -->
+        <div class="credits-container">
+            <a href="./about.html"><button class="credits-btn">Designers</button></a>
+            <a href="./feedback.html"><button class="credits-btn feedback-btn">Feedback</button></a>
+        </div>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="./main.js"></script>
+<script src="./learning.js"></script>
+</body>
+</html>

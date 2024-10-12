@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+                <!-- lining Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">        
+    
+                <!-- linking css -->
+    <link rel="stylesheet" href="./feedback.css ">
+            
+</head>
+<body>
+
+                    
+
+                    <!-- header section starts -->
+
+    <header class="head">
+        <div class="container">
+            <div class="head-wrapper">
+                <a href="./index.html"><h1 class="main-heading">FoodCook Planner</h1></a>
+            </div>
+        </div>
+    </header>
+
+                    <!-- header section ends -->
+
+                
+
+    <main class="main">
+
+        <div class="feedback-heading">
+            <h1>Feedback Form</h1>
+        </div>
+
+        <form class="feedback-form" name="feedbackForm">
+            <input class="name-input" name="name_input" type="text" placeholder="Enter your Full Name">
+            <div class="radial-input">
+                <label for="general-feedback">
+                    <input type="radio" name="type" id="general-feedback" value="general-feedback">
+                    General Feedback
+                </label>
+                <label for="technical-support">
+                    <input type="radio" name="type" id="technical-support" value="technical-support">
+                    Technical Support
+                </label>
+                <label for="contribution">
+                    <input type="radio" name="type" id="contribution" value="contribution">
+                    Contribution
+                </label>
+            </div>
+            <input class="mail-input" name="mail_input" type="email" placeholder="ABC@gmail.com">
+            <textarea class="form-text-area" name="form_text_area" placeholder="Enter your feedback briefly!" rows="6"></textarea>
+            <label for="form-terms" class="terms">
+                <input type="checkbox" name="form_terms" id="form-terms">
+                I accept Terms and Conditions.
+            </label>
+            <button class="form-button">Submit</button>
+            <div class="api-div">
+                
+            </div>
+        </form>
+
+
+        
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+<script src="./feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+
+        /* imports fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* default reset properties */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;   
+
+}
+body{
+    font-family: "Poppins", system-ui;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+:root {
+    --black: #000;
+    --white: #ffffff;
+    --blue: #22577a;
+    --green: #38a3a5;
+    --emerald: #57cc99;
+    --light_green: #80ed99;
+    --tea_green: #c7f9cc;
+}
+        /* header section starts */
+
+.head{
+    background-color: var(--blue);
+}
+.head-wrapper{
+    padding: 20px 0;
+    text-align: center;
+}
+.main-heading{
+    font-weight: 300;
+    color: var(--white);
+}
+
+        /* form section starts */
+
+.main{
+    background-color: var(--tea_green);
+    min-height: 100vh;
+    padding: 30px 0;
+    padding-bottom: 0;
+    color: #c7f9cc;
+}
+
+.form-section{
+    margin-top: 60px;
+}
+
+.form-border{
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15), -20px -20px 40px rgba(255, 255, 255, 0.7);
+
+}
+.form-row{
+    text-align: center;
+}
+#form-inputbox{
+    padding: 5px 10px;
+    outline: none;
+    font-family: "Poppins";
+    border: 1px solid var(--light_green);
+    border-radius: 5px;
+    max-width: 300px;
+    width: 100%;
+}
+#form-row-button{
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#form-row-button:hover{
+    background-color: #3f8e90;
+}
+#textbox{
+    max-width: 400px;
+    margin: 0 auto;  
+    margin-top: 20px;
+
+
+}
+
+
+
+.food-item-container{
+    background-color: var(--light_green);
+    padding: 8px 25px;
+    margin-bottom: 10px;
+    border-radius: 7px;  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.food-item{
+    list-style-type: none;
+    color: var(--black) ;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    cursor: default;
+    
+}
+.food-item-container:hover{
+    background-color: var(--green);
+    .food-item{
+        color: var(--white);
+        font-weight: 700;
+    }
+    
+}
+.food-item-container.select{
+    background-color: var(--green);
+    .food-item{
+        color: var(--white);
+        font-weight: 700;
+    }
+}
+.trash-icon{
+    cursor: pointer;
+}
+
+                            /* alert section starts */
+
+.alert{
+    display: none;
+}
+.removeAlert{
+    display: none;
+}
+
+.alert-wrapper{
+    max-width: 800px;
+    background: linear-gradient(45deg, #b5e48c, #76c893);
+    color: #1b4332;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-left: 35px;
+    border-left: 15px solid #1b4332;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition-duration: 500ms;
+
+}
+
+.alert-close-btn{
+    padding: 5px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#close-icon{
+    color: var(--black);
+}
+.alert-close-btn:hover{
+    background-color: #496650;
+    
+    #close-icon{
+        color: #fff;
+    }
+}
+
+
+
+
+.input-off{
+    display: none;
+}
+.summa-input-container{
+    display: block;
+    margin-top: 40px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15), -20px -10px 40px rgba(255, 255, 255, 0.7);
+    text-align: center;
+
+}
+
+
+.summa-input{
+    padding: 5px 10px;
+    outline: none;
+    font-family: "Poppins";
+    border: 1px solid var(--light_green);
+    border-radius: 5px;
+    max-width: 300px;
+    width: 100%;
+}
+.toggle-button{
+    display: block;
+    margin: 30px auto;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+
+
+        /*------------------------ form validate section starts--------------------------------------- */
+
+
+        form{
+            padding: 30px 0;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.15), -20px -20px 40px rgba(255, 255, 255, 0.7);
+        }
+        form div:nth-child(1) input{
+            padding: 5px 10px;
+        }
+        form div span {
+            color: black;
+            cursor: pointer;
+        }
+        label{
+            display: flex;
+            gap: 10px;
+            align-items: center ;
+            justify-content: center;
+        }
+        form button{
+            margin-top: 20px;
+            padding: 5px 20px;
+            background-color: #57cc99   ;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            text-shadow: 0 0 20px rgba(7, 7, 7, 0.489);cursor: pointer;
+        }
+
+
+
+.form-input-alert{
+    max-width: 187px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: red;
+    height: 14px;
+}
+form>div:nth-child(2){
+    margin-top: 10px;
+}
+
+
+                    /* event delegation */
+
+.credits-container{
+    text-align: center;
+    background-color: black;
+    padding: 30px 0;
+    
+}
+
+.credits-btn{
+            padding: 5px 20px;
+            color: white;
+            background-color: black   ;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+
+            position: relative;
+
+}
+.feedback-btn{
+    margin-left: 20px;
+}
+
+.credits-btn::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--white);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.credits-btn:hover::after{
+    display: block;
+}
+
+       /* about page starts */
+
+table{
+    margin: 30px auto;
+    border-spacing: 0;
+    background-color: var(--white);
+}
+th{
+    background-color: var(--blue);
+    color: var(--white);
+}
+tr.bg-blue{
+    background-color: lightblue;
+}
+td{
+    color: var(--black);
+}
+td,th{
+    padding: 8px 30px;
+    border: 0.2px solid black;
+
+}
+td>a{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+        /* donate section */
+
+.donate-toggle-btn{
+    background-color: var(--green);
+    color: white;
+    max-width: fit-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.donate-section{
+    margin-top: 30px;
+    display: none;
+}
+.donate-section-wrapper{
+    background-color: var(--white);
+    padding: 30px 30px;
+    max-width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rupee-symbol{
+    color: var(--black);
+    font-size: 20px;
+    margin-right: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#donate-input{
+    padding: 5px 0;
+    padding-left: 7px;
+    font-size: 14px;
+}
+#donate-btn{
+    margin-left: 15px;
+    border: none;
+    padding: 5px 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+}
